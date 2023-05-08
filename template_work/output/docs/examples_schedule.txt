@@ -1,0 +1,16 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: schedule
+Format........: rschedule
+Key field(s)..: schtime
+Type..........: physical
+Base file.....: 
+Description...: Schedule file for Alert File example
+Record length.: 76
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+schtime               *Timestamp                
+
+schdetails            *Char          50         
+----------------------------------------------------------------------------

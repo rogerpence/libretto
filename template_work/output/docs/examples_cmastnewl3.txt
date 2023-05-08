@@ -1,0 +1,24 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: cmastnewl3
+Format........: rcmmaster
+Key field(s)..: cmstate, cmname
+Type..........: simple logical
+Base file.....: examples/cmastnew
+Description...: 
+Record length.: 151
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmstate               *Char          2          State
+cmname                *Char          40         Customer Name
+
+cmcustno              *Packed        9,0        Cutomer Number
+cmaddr1               *Char          35         Address Line 1
+cmcity                *Char          30         City
+cmcntry               *Char          2          Country Code
+cmpostcode            *Char          10         Postal Code (zip)
+cmactive              *Char          1          Active = 1, else 0
+cmfax                 *Packed        10,0       Fax Number
+cmphone               *Char          20         Main Phone
+----------------------------------------------------------------------------

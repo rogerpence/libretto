@@ -1,0 +1,21 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: caonly
+Format........: rcmmaster
+Key field(s)..: cmpostcode
+Type..........: simple logical
+Base file.....: examples/cmastnew
+Description...: 
+Record length.: 124
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmpostcode            *Char          10         Postal Code (zip)
+
+cmcustno              *Packed        9,0        Cutomer Number
+cmname                *Char          40         Customer Name
+cmaddr1               *Char          35         Address Line 1
+cmcity                *Char          30         City
+cmstate               *Char          2          State
+cmcntry               *Char          2          Country Code
+----------------------------------------------------------------------------

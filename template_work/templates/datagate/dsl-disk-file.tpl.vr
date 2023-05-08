@@ -1,0 +1,18 @@
+DclDB DGDB DBName("{{dbname}}") 
+            
+    DclDiskFile {{alias}}R +
+        Type(*Input) + 
+        Org(*Indexed) + 
+        File("{{library}}/{{file}}") +
+        DB(DGDB) +
+        RnmFmt(F{{alias}}R) +        
+        ImpOpen(*No)  
+        
+    DclDiskFile {{alias}}W +
+        Type(*Update) + 
+        Org(*Indexed) + 
+        File("{{library}}/{{file}}") +
+        DB(DGDB) +
+        AddRec(*Yes) +
+        RnmFmt(F{{alias}}W) +
+        ImpOpen(*No)

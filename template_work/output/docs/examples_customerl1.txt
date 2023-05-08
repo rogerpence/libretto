@@ -1,0 +1,25 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: customerl1
+Format........: rcustomer
+Key field(s)..: cmcustno
+Type..........: simple logical
+Base file.....: examples/customer
+Description...: 
+Record length.: 189
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmcustno              *Packed        9,0        Number
+
+cmname                *Char          40         Name
+cmaddr1               *Char          35         Address Line 1
+cmaddr2               *Char          35         Address Line 2
+cmcity                *Char          30         City
+cmstate               *Char          2          State
+cmpostcode            *Char          10         Zip Code
+cmactive              *Char          1          Status Code
+cmfax                 *Packed        10,0       Fax Number
+cmphone               *Char          20         Phone Number
+cmusrflgs             *Char          5          User Defined Flags
+----------------------------------------------------------------------------

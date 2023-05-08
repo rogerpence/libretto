@@ -1,0 +1,22 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: camaster
+Format........: rcamaster
+Key field(s)..: cacustno, caaddr#
+Type..........: physical
+Base file.....: 
+Description...: Customer Shipping Addresses( Monarch Examples )
+Record length.: 159
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cacustno              *Packed        9,0        Number
+caaddr#               *Packed        3,0        Address number
+
+caname                *Char          40         Name
+caaddr1               *Char          35         Address line 1
+caaddr2               *Char          35         Address line 2
+cacity                *Char          30         City
+castate               *Char          2          State
+cazip                 *Char          10         Zip code
+----------------------------------------------------------------------------

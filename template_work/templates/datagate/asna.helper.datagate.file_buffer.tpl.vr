@@ -1,0 +1,30 @@
+/*
+ | Create a strongly-typed entity for:
+ |      Database....: {{library}}
+ |      Table.......: {{file}}
+ |
+ | Dependencies:
+ |     None.
+ |        
+ |  This code was produced with LibrettoX on:    
+ |     on.............: {{_datetime}}
+ |     with template..: {{_template}}
+ |     with schema....: {{_schema}}
+*/
+
+Using System
+Using System.Text
+
+DclNamespace ASNA.Helper.DataGate
+
+BegClass {{file}}_entity Access(*Public)
+    // Key fields:
+    {% for field in keyfields %}
+    DclProp {{field.name}} {{field.fulltype}} Access(*Public) 
+    {% endfor %}
+
+    // Other fields:
+    {% for field in nonkeyfields %}
+    DclProp {{field.name}} {{field.fulltype}} Access(*Public) 
+    {% endfor %}
+EndClass

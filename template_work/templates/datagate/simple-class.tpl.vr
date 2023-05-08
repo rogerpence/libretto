@@ -1,0 +1,85 @@
+Using System 
+
+DclNamespace MyNamespace 
+
+BegClass Tester Access(*Public) Partial(*Yes)
+
+    BegFunc GetRowsWithSql Access(*Public) Type(PSTDTLL0_buffer) Rank(1)
+        DclSrParm sql Type(*String) 
+
+        DclFld Buffer Type(PSTDTLL0_buffer) 
+        DclFld DataRows Type(List(*Of PSTDTLL0_buffer)) New()
+
+        BegUsing Conn Type(SqlConnection) Value(*New SqlConnection(CONNECTION_STRING))
+            Conn.Open()
+
+            DclFLd buffer Type(PSTDTLL0_buffer)
+
+            DclFld reader Type(SqlDataReader)
+            DclFld cmd Type(SqlCommand) 
+                                                                  
+            cmd = *New SqlCommand(sql, conn) 
+            reader = cmd.ExecuteReader()
+
+            If reader.HasRows
+                DoWhile reader.Read()
+                    buffer = CreateBufferFromSqlDataReader(reader)
+                    DataRows.Add(Buffer) 
+                EndDo 
+            EndIf 
+            reader.Close()    
+        EndUsing
+
+        leaveSr DataRows.ToArray() 
+    EndFunc
+
+    BegSr AssignToBuffer
+        DclSrParm buffer Type({{file}}_buffer)
+
+        {% for field in keyfields %}
+        buffer.{{field.name}} = {{field.name}}
+        {% endfor %}
+
+        {% for field in nonkeyfields %}
+        buffer.{{field.name}} = {{field.name}}
+        {% endfor %}
+    EndSr
+
+    BegSr AssignToFormat
+        DclSrParm buffer Type({{file}}_buffer)
+
+        {% for field in keyfields %}
+        {{field.name}} = buffer.{{field.name}}
+        {% endfor %}
+
+        {% for field in nonkeyfields %}
+        {{field.name}} = buffer.{{field.name}}
+        {% endfor %}
+    EndSr
+
+    BegFunc CreateBufferFromSqlDataReader Type(PSTDTLL0_buffer)
+        DclSrParm reader Type(SqlDataReader)
+
+        DclFld buffer Type(PSTDTLL0_buffer) New()
+
+        {% for field in keyfields %}
+        buffer.{{field.name}} = reader['{{field.name}}'] *As {{field.systemtype}}
+        {% endfor %}
+
+        {% for field in nonkeyfields %}
+        buffer.{{field.name}} = reader['{{field.name}}'] *As {{field.systemtype}}
+        {% endfor %}
+
+        LeaveSr buffer
+    EndFunc
+EndClass    
+
+BegClass {{file}}_buffer Access(*Public)
+    {% for field in keyfields %}
+    DclProp {{field.name}} {{field.fulltype}} Access(*Public) 
+    {% endfor %}
+
+    {% for field in nonkeyfields %}
+    DclProp {{field.name}} {{field.fulltype}} Access(*Public) 
+    {% endfor %}
+EndClass

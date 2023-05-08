@@ -1,0 +1,25 @@
+    BegSr AssignFieldsToUI
+        field_CMCustNo.Text = CMCustNo
+        field_CMName.Text = CMName
+        field_CMAddr1.Text = CMAddr1
+        field_CMCity.Text = CMCity
+        field_CMState.Text = CMState
+        field_CMCntry.Text = CMCntry
+        field_CMPostCode.Text = CMPostCode
+        field_CMActive.Text = CMActive
+        field_CMFax.Text = CMFax
+        field_CMPhone.Text = CMPhone
+    EndSr
+
+    BegSr AssignFieldsFromUI
+        CMCustNo = field_CMCustNo.Text
+        CMName = field_CMName.Text
+        CMAddr1 = field_CMAddr1.Text
+        CMCity = field_CMCity.Text
+        CMState = field_CMState.Text
+        CMCntry = field_CMCntry.Text
+        CMPostCode = field_CMPostCode.Text
+        CMActive = field_CMActive.Text
+        CMFax = field_CMFax.Text
+        CMPhone = field_CMPhone.Text
+    EndSr

@@ -1,0 +1,24 @@
+Database Name.: *public/DG NET Local
+Library.......: examples
+File..........: CMastNewL1
+Format........: RCMMastL1
+Key field(s)..: cmcustno
+Type..........: simple logical
+Base file.....: Examples/CMastNew
+Description...: Cust Master by CustNo
+Record length.: 151
+
+Field name        Data type                    Description
+----------------------------------------------------------------------------
+CMCustNo          Type(*Packed) Len(9,0)       Cutomer Number
+
+CMName            Type(*Char) Len(40)          Customer Name
+CMAddr1           Type(*Char) Len(35)          Address Line 1
+CMCity            Type(*Char) Len(30)          City
+CMState           Type(*Char) Len(2)           State
+CMCntry           Type(*Char) Len(2)           Country Code
+CMPostCode        Type(*Char) Len(10)          Postal Code (zip)
+CMActive          Type(*Char) Len(1)           Active = 1, else 0
+CMFax             Type(*Packed) Len(10,0)      Fax Number
+CMPhone           Type(*Char) Len(20)          Main Phone
+----------------------------------------------------------------------------

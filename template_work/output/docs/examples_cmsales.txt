@@ -1,0 +1,28 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: cmsales
+Format........: rformat
+Key field(s)..: cmcustno, year
+Type..........: physical
+Base file.....: 
+Description...: 
+Record length.: 116
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmcustno              *Packed        9,0        
+year                  *Packed        4,0        
+
+jan                   *Packed        16,2       
+feb                   *Packed        16,2       
+mar                   *Packed        16,2       
+apr                   *Packed        16,2       
+may                   *Packed        16,2       
+jun                   *Packed        16,2       
+jul                   *Packed        16,2       
+aug                   *Packed        16,2       
+sep                   *Packed        16,2       
+oct                   *Packed        16,2       
+nov                   *Packed        16,2       
+dec                   *Packed        16,2       
+----------------------------------------------------------------------------

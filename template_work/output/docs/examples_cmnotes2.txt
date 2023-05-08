@@ -1,0 +1,17 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: cmnotes2
+Format........: rcustnote
+Key field(s)..: cmcustno, cmnseq
+Type..........: physical
+Base file.....: 
+Description...: Customer Notes
+Record length.: 136
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmcustno              *Packed        9,0        Account Number
+cmnseq                *Packed        5,0        Sequence
+
+cmnsegmnt             *Char          128        Notes Segment
+----------------------------------------------------------------------------

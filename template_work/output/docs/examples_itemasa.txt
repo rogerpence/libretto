@@ -1,0 +1,89 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: itemasa
+Format........: ritemasa
+Key field(s)..: itnbr
+Type..........: physical
+Base file.....: 
+Description...: M7X 04146 ITEM MASTER - INVENTORY INFORMATION
+Record length.: 299
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+itnbr                 *Char          15         ITEM NUMBER
+
+recid                 *Char          1          RECORD IDENTIFIER
+invfg                 *Zoned         2,0        INVENTORY FLAG
+lolev                 *Zoned         2,0        LOW LEVEL CODE
+noslc                 *Packed        3,0        NUMBER SINGLE LEVEL ASSEMBLY COMPONENTS
+nopwu                 *Packed        5,0        NUMBER OF PARENT ASSEMBLIES WHERE USED
+nodet                 *Packed        7,0        NUMBER OF ADD'L ROUTING DESCRIPTIONS
+norop                 *Packed        3,0        NUMBER OF ROUTING OPERATIONS
+racno                 *Zoned         3,0        RUN ACTIVITY CONTROL NUMBER
+fotab                 *Zoned         1,0        FEATURE/OPTIONS TEMPLATE SUFFIX
+itdsc                 *Char          30         ITEM DESCRIPTION
+engno                 *Char          15         ENGINEERING DRAWING NUMBER
+price                 *Packed        15,3       BASE PRICE
+ucdef                 *Packed        19,8       UNIT COST DEFAULT
+unmsr                 *Char          2          UNIT OF MEASURE
+ittyp                 *Char          1          ITEM TYPE CODE
+itcls                 *Char          4          ITEM CLASS
+valuc                 *Char          1          VALUE CLASS
+vndnr                 *Char          6          VENDOR NUMBER
+whslc                 *Char          7          WAREHOUSE STOCK LOCATION
+dptno                 *Char          4          DEPARTMENT NUMBER
+weght                 *Packed        7,3        UNIT WEIGHT
+stdsu                 *Packed        19,8       STANDARD SETUP COST PER LOT
+carry                 *Packed        3,3        CARRYING RATE
+snflg                 *Char          1          S-NUMBER FLAG
+dmcod                 *Char          1          UNIT PRICE DISCOUNT/MARKUP CODE
+updm1                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 1
+updm2                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 2
+updm3                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 3
+updm4                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 4
+updm5                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 5
+updm6                 *Packed        5,3        UNIT PRICE DISCOUNT/MARKUP PERCENT 6
+saflg                 *Zoned         1,0        SALES ANALYSIS FLAG
+packc                 *Char          2          PACKING CODE
+mdate                 *Packed        7,0        DATE THIS RECORD LAST MAINTAINED
+recaf                 *Zoned         1,0        DISKETTE A-RECORD READ FLAG
+qtywk                 *Packed        13,6       QUANTITY WORK FIELD
+lvndn                 *Char          6          LAST VENDOR NUMBER
+lplan                 *Packed        5,0        LAST PLANNER NUMBER
+qctyp                 *Zoned         1,0        QC CONTROL FLAG
+qcday                 *Zoned         4,0        SHELF LIFE IN DAYS
+intyp                 *Zoned         1,0        INSPECT ON RECEIPT FLAG
+blcf                  *Zoned         1,0        BATCH/LOT CONTROL FLAG
+alloc                 *Zoned         1,0        DISCRETE ALLOCATIONS FLAG
+cumsy                 *Packed        4,3        STANDARD CUMULATIVE YIELD ALL OPERATIONS
+cumcy                 *Packed        4,3        CURRENT CUMULATIVE YIELD ALL OPERATIONS
+cumay                 *Packed        4,3        AVERAGE CUMULATIVE YIELD ALL OPERATIONS
+sbqty                 *Packed        11,3       STANDARD BATCH QUANTITY
+mscod                 *Char          1          MASTER SCHEDULE ITEM CODE
+dmdfn                 *Packed        3,0        DEMAND TIME FENCE DAYS
+mperc                 *Zoned         1,0        MASTER SCHEDULE PLANNING EXCEPTION FLAG
+rscno                 *Char          5          RESOURCE NUMBER
+rscbf                 *Char          1          RESOURCE PROFILE BUILD FLAG
+pmult                 *Packed        7,3        PRICE CONVERSION MULTIPLIER
+ptrcd                 *Zoned         1,0        PRICE CODE
+lstum                 *Char          2          PRICING UNIT OF MEASURE
+mswfg                 *Zoned         1,0        MSFPO POINTING TO MSIORW FILE FLAG
+rpmtn                 *Char          1          RESOURCE PROFILE USER MAINTAINED
+msact                 *Zoned         1,0        MASTER SCHEDULE ORDER ACTIVITY FLAG
+rview                 *Zoned         1,0        MASTER SCHEDULE ITEM REVIEWED FLAG
+omitp                 *Char          1          OMIT PARTIALLY GENERATED PROFILES
+alclv                 *Zoned         2,0        ALLOCATION RETRIEVAL LOW LEVEL
+exctl                 *Zoned         1,0        EXTRACT CONTROL BYTE
+rtchg                 *Zoned         1,0        ROUTING CHANGE
+wsusr                 *Char          2          WORKSTATION USER
+itd20                 *Char          20         TRUNCATED ITEM DESCRIPTION (20 POSITIONS)
+itd10                 *Char          10         TRUNCATED ITEM DESCRIPTION  (10 POSITIONS)
+mdtag                 *Char          1          MODIFIED DATA TAG
+rtgid                 *Char          15         ROUTING IDENTIFIER
+selno                 *Char          2          SELECT NUMBER
+ptaxi                 *Char          3          PURCHASE TAX IND
+staxi                 *Char          3          SALE TAX INDICATOR
+ipraf                 *Packed        5,2        ITEM PRICE ADJ FACTOR
+pfpln                 *Zoned         5,0        PRODUCTION FAMILY PLANNER
+itacim                *Char          3          ITEM ACCOUNTING CLASS
+----------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: states
+Format........: rstates
+Key field(s)..: state
+Type..........: physical
+Base file.....: 
+Description...: 
+Record length.: 50
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+state                 *Char          48         
+
+abbrev                *Char          2          
+----------------------------------------------------------------------------

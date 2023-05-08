@@ -1,0 +1,28 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: custmast
+Format........: rcustmast
+Key field(s)..: cmcustno
+Type..........: physical
+Base file.....: 
+Description...: Customer Master With Sales
+Record length.: 179
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cmcustno              *Packed        9,0        Cutomer Number
+
+cmname                *Char          40         Customer Name
+cmaddr1               *Char          35         Address Line 1
+cmactive              *Char          1          Active = 1, else 0
+cmfax                 *Packed        10,0       Fax Number
+cmphone               *Char          20         Main Phone
+cmpostcode            *Char          10         Postal Code (zip)
+cmstate               *Char          2          State
+cmcity                *Char          30         City
+cmsales01             *Packed        11,2       Sales for Year 1
+cmsales02             *Packed        11,2       Sales for Year 2
+cmsales03             *Packed        11,2       Sales for Year 3
+cmsales04             *Packed        11,2       Sales for Year 4
+cmsales05             *Packed        11,2       Sales for Year 5
+----------------------------------------------------------------------------

@@ -1,0 +1,45 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: examplesref
+Format........: references
+Key field(s)..: 
+Type..........: physical
+Base file.....: 
+Description...: Examples Field Reference File
+Record length.: 330
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+custno                *Packed        9,0        Account Number
+name                  *Char          40         Customer Name
+addr1                 *Char          35         Address Line 1
+addr2                 *Char          35         Address Line 2
+active                *Char          1          Active = 1, else 0
+fax                   *Packed        10,0       Fax Number
+phone                 *Char          20         Main Phone
+postcode              *Char          10         Postal Code (zip)
+state                 *Char          2          State
+city                  *Char          30         City
+cntry                 *Char          2          Country Code
+year                  *Zoned         4,0        Sales Year
+type                  *Zoned         1,0        1 = sales  2 = returns
+sales01               *Packed        11,2       Sales Month 01
+sales02               *Packed        11,2       Sales Month 02
+sales03               *Packed        11,2       Sales Month 03
+sales04               *Packed        11,2       Sales Month 04
+sales05               *Packed        11,2       Sales Month 05
+sales06               *Packed        11,2       Sales Month 06
+sales07               *Packed        11,2       Sales Month 07
+sales08               *Packed        11,2       Sales Month 08
+sales09               *Packed        11,2       Sales Month 09
+sales10               *Packed        11,2       Sales Month 10
+sales11               *Packed        11,2       Sales Month 11
+sales12               *Packed        11,2       Sales Month 12
+sku                   *Packed        5,0        Part/Inventory Number
+skuname               *Char          40         Part Name
+onhand                *Packed        7,0        Qty On Hand
+onord                 *Packed        7,0        Qty On Order
+commit                *Packed        7,0        Qty Committed
+unitcost              *Packed        11,4       Unit Cost
+unitprice             *Packed        11,4       Unit Price
+----------------------------------------------------------------------------

@@ -1,0 +1,40 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: pohistc
+Format........: pocomtdc
+Key field(s)..: ordno, pgedt, itnbr, house, linsq, blksq, debit, cmseq
+Type..........: physical
+Base file.....: 
+Description...: M7X 04146 PO HISTORY COMMENT FILE
+Record length.: 216
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+ordno                 *Char          7          ORDER NUMBER
+pgedt                 *Packed        7,0        PURGE DATE
+itnbr                 *Char          15         ITEM NUMBER
+house                 *Char          3          WAREHOUSE
+linsq                 *Zoned         3,0        MISC/SERV ITEM SEQUENCE
+blksq                 *Packed        4,0        BLANKET P.O. SEQUENCE NUMBER
+debit                 *Char          10         DEBIT MEMO NUMBER
+cmseq                 *Zoned         3,0        COMMENT SEQUENCE NUMBER
+
+poisq                 *Packed        5,0        PO ITEM SEQUENCE
+messn                 *Char          5          STANDARD MESSAGE NUMBER
+cmnt1                 *Char          40         PURCHASE ORDER CMNTS 1ST 40
+cmnt2                 *Char          40         PURCHASE ORDER CMNTS 2ND 40
+chgtx                 *Zoned         1,0        CHANGE COMMENT TEXT
+revnb                 *Zoned         2,0        REVISION NUMBER
+mdate                 *Packed        7,0        DATE THIS RECORD LAST MAINTAINED
+opseq                 *Char          4          OPERATION SEQUENCE NUMBER
+wkctr                 *Char          5          PRODUCTION FACILITY ID
+wuflg                 *Char          1          COMMENT WHERE-USED FLAG
+rtaut                 *Char          10         RETURN AUTHORITY
+usint                 *Char          2          USER INITIALS
+tract                 *Char          1          TRANSACTION ACTIVITY CODE
+chgno                 *Packed        4,0        CHANGE FIELD NUMBER
+chgdl                 *Char          40         CHANGE DETAIL
+chgdt                 *Packed        7,0        CHANGE DATE
+edsfl                 *Char          1          EXTENDED DESCRIPTION FLAG
+hstvc                 *Zoned         2,0        HISTORY VERSION FIELD
+----------------------------------------------------------------------------

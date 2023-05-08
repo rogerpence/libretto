@@ -1,0 +1,19 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: skusales
+Format........: rskusales
+Key field(s)..: 
+Type..........: physical
+Base file.....: 
+Description...: SKU Sales Master
+Record length.: 33
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+imsku                 *Packed        5,0        Part/Inventory Number
+imsales01             *Packed        11,2       Sales 4 years ago
+imsales02             *Packed        11,2       Sales 3 years ago
+imsales03             *Packed        11,2       Sales 2 years ago
+imsales04             *Packed        11,2       Sales 1 year ago
+imsales05             *Packed        11,2       Sales Current Year
+----------------------------------------------------------------------------

@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examples/CMastNewL1</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+        .copy-class {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .copy-code-message {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+        }
+
+        table, .code-container {
+            /*max-width: 120ch !important;*/
+        }
+
+    </style>    
+</head>
+
+<!-- generated on:  -->
+<!-- with template:  -->
+<!-- with schema:  -->
+
+<body class="bg-gray-100 p-10">
+
+<div class='toc'>
+    <ul>
+    </ul>
+</div>    
+   
+<div class="file-def">   
+    <h3 class="text-2xl">File definition: <span class="font-bold">/Examples/CMastNewL1</span></h3>
+    <table class="w-9/12 mt-2 border border-solid border-gray-600">
+        <tr class="bg-gray-800 text-white">
+            <th colspan="2" class="text-left p2">File info</th>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="p-2 ">Database Name</td>
+            <td class="p-2">*Public/DG NET Local</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="p-2">Library</td>
+            <td class="p-2">Examples</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="p-2">File</td>
+            <td class="p-2">CMastNewL1</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="p-2">Format</td>
+            <td class="p-2">Cust Master by CustNo</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="p-2">Type</td>
+            <td class="p-2">simple logical</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="p-2">Base file</td>
+            <td class="p-2">Examples/CMastNew</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="p-2">Description</td>
+            <td class="p-2">Cust Master by CustNo</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="p-2">Record length</td>
+            <td class="p-2">151</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="p-2">Key length</td>
+            <td class="p-2">5</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="p-2">Key fields</td>
+            <td class="p-2">CMCustNo</td>
+        </tr>
+    </table>
+    <div></div>
+    <h3 class="text-2xl mt-8">Field schema</h3>
+    <table class="w-9/12 mt-2 border border-solid border-gray-600">
+        <tr class="bg-gray-800 text-white">
+            <th class="text-left p-2" colspan="2">Field name</th>
+            <th class="text-left p-2">Data type</th>
+            <th class="text-center p-2">Length</th>
+            <th class="text-center p-2">SQL type</th>
+            <th class="text-left p-2">Description</th>
+                    </tr>
+
+        <tr class="bg-yellow-200">
+            <td class="text-left p-2"><i class="fas fa-key"></i></td>
+            <td class="text-left p-2">CMCustNo</td>
+            <td class="text-left p-2">*Packed </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Cutomer Number</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMName</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Customer Name</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMAddr1</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Address Line 1</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMCity</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">City</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMState</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">State</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMCntry</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Country Code</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMPostCode</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Postal Code (zip)</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMActive</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Active = 1, else 0</td>
+        </tr>
+        <tr class="bg-yellow-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMFax</td>
+            <td class="text-left p-2">*Packed </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Fax Number</td>
+        </tr>
+        <tr class="bg-green-200">
+            <td class="text-left p-2"></td>
+            <td class="text-left p-2">CMPhone</td>
+            <td class="text-left p-2">*Char </td>
+            <td class="text-center p-2"></td>
+            <td class="text-center p-2"></td>
+            <td class="text-left p-2">Main Phone</td>
+        </tr>
+    </table>
+
+
+    <h3 class="mt-3 text-xl font-bold">Input file</h3>
+    <div class="code-container bg-gray-500 p-3 max-w-5xl">
+
+    <div class="copy-class" style="text-align: right;">
+        <div class="copy-code-message">
+            <i class="copy-icon fa-solid fa-copy"></i><small class="copy-text"> Copy class below to clipboard</small>
+        </div>
+    </div>
+    
+
+    <pre id="code-01">DclDiskFile cmastnew_R +
+    Type(*Input) + 
+    Org(*Indexed) + 
+    Prefix(CMastNewL1_) + 
+    File("Examples/CMastNewL1") +
+    DB(DGDB) +
+    RnmFmt(CMastNewL1r) +
+    ImpOpen(*No)</pre>            
+    </div>
+
+    <h3 class="mt-3 text-xl font-bold">Update/Add file</h3>
+    <div class="code-container bg-gray-500 p-3 max-w-5xl">
+    
+    <div class="copy-class" style="text-align: right;">
+        <div class="copy-code-message">
+            <i class="copy-icon fa-solid fa-copy"></i><small class="copy-text"> Copy class below to clipboard</small>
+        </div>
+    </div>
+    
+    <pre id="code-02">DclDiskFile CMastNewL1_W +
+    Type(*Update) + 
+    Org(*Indexed) + 
+    Prefix(CMastNewL1_) + 
+    File("Examples/CMastNewL1") +
+    DB(DGDB) +
+    RnmFmt(CMastNewL1w) +
+    ImpOpen(*No) +
+    AddRec(*Yes)</pre>            
+    </div>
+
+
+    <h3 class="mt-3 text-xl font-bold">Loop to read a file</h3>
+    <div class="code-container bg-gray-500 p-3 max-w-5xl">
+
+    <div class="copy-class" style="text-align: right;">
+        <div class="copy-code-message">
+            <i class="copy-icon fa-solid fa-copy"></i><small class="copy-text"> Copy class below to clipboard</small>
+        </div>
+    </div>
+    
+    <pre id="code-03">Read CMastNewL1
+DoWhile NOT CMastNewL1.IsEOF
+    ...Process record here.
+    Read CMastNewL1
+EndDo</pre>
+    </div>
+</div>    
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="index.js"></script>
+
+<script>
+    const copyToClipboard = str => {
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+            return navigator.clipboard.writeText(str)
+        return Promise.reject('The Clipboard API is not available.')
+    };    
+
+    const copyButtons = [...document.querySelectorAll('.copy-class')]
+    
+    copyButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            button.classList.add('on-paste');            
+
+            const sourceCode = button.nextElementSibling.innerHTML
+            copyToClipboard(sourceCode)
+
+            const faIconEl = button.querySelector('.copy-icon')
+            faIconEl.classList.remove('fa-solid', 'fa-copy')
+            faIconEl.classList.add('fa-solid','fa-thumbs-up')
+
+            const copyTextEl = button.querySelector('.copy-text')
+            copyTextEl.innerHTML = ' Code copied to clipboard'
+
+            setTimeout(() =>{
+                button.classList.remove('on-paste')        
+                faIconEl.classList.remove('fa-solid','fa-thumbs-up')
+                faIconEl.classList.add('fa-solid', 'fa-copy')
+                copyTextEl.innerHTML = ' Copy code below to clipboard'
+            }, 750)
+        })
+    })
+
+</script>
+
+</body>
+</html>
+
+
+

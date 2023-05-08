@@ -1,0 +1,86 @@
+﻿{
+  "dbname": "*public/DG NET Local",
+  "library": "examples",
+  "file": "CUSTFILE",
+  "format": "CUSTR",
+  "description": "Customer File Field Description",
+  "type": "physical",
+  "recordlength": "25",
+  "keylength": "5",
+  "basefile": "",
+  "duplicatekeys": "allowed",
+  "sqlserveruniqueindex": "",
+  "alias": "custfile",
+  "keyfieldslist": "custno",
+  "allfieldslist": "custno, custnm",
+  "fields": [
+    {
+      "name": "CUSTNO",
+      "description": "CUSTNO",
+      "alias": "custno",
+      "fulltype": "Type(*Packed) Len(9,0)",
+      "type": "*Packed",
+      "length": "9",
+      "decimals": "0",
+      "systemtype": "System.Decimal",
+      "iskey": true,
+      "keyposition": 0,
+      "allownull": false,
+      "sqlservertype": "decimal(9,0)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": "PRIMARY KEY"
+    },
+    {
+      "name": "CUSTNM",
+      "description": "CUSTNM",
+      "alias": "custnm",
+      "fulltype": "Type(*Char) Len(20)",
+      "type": "*Char",
+      "length": "20",
+      "decimals": "",
+      "systemtype": "System.String",
+      "iskey": false,
+      "keyposition": -1,
+      "allownull": false,
+      "sqlservertype": "varchar(20)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": ""
+    }
+  ],
+  "keyfields": [
+    {
+      "name": "CUSTNO",
+      "description": "CUSTNO",
+      "alias": "custno",
+      "fulltype": "Type(*Packed) Len(9,0)",
+      "type": "*Packed",
+      "length": "9",
+      "decimals": "0",
+      "systemtype": "System.Decimal",
+      "iskey": true,
+      "keyposition": 0,
+      "allownull": false,
+      "sqlservertype": "decimal(9,0)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": "PRIMARY KEY"
+    }
+  ],
+  "nonkeyfields": [
+    {
+      "name": "CUSTNM",
+      "description": "CUSTNM",
+      "alias": "custnm",
+      "fulltype": "Type(*Char) Len(20)",
+      "type": "*Char",
+      "length": "20",
+      "decimals": "",
+      "systemtype": "System.String",
+      "iskey": false,
+      "keyposition": -1,
+      "allownull": false,
+      "sqlservertype": "varchar(20)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": ""
+    }
+  ]
+}

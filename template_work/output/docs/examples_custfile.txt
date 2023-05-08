@@ -1,0 +1,16 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: custfile
+Format........: custr
+Key field(s)..: custno
+Type..........: physical
+Base file.....: 
+Description...: Customer File Field Description
+Record length.: 25
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+custno                *Packed        9,0        CUSTNO
+
+custnm                *Char          20         CUSTNM
+----------------------------------------------------------------------------

@@ -1,0 +1,86 @@
+﻿{
+  "dbname": "*public/DG NET Local",
+  "library": "examples",
+  "file": "Schedule",
+  "format": "RSchedule",
+  "description": "Schedule file for Alert File example",
+  "type": "physical",
+  "recordlength": "76",
+  "keylength": "26",
+  "basefile": "",
+  "duplicatekeys": "not allowed",
+  "sqlserveruniqueindex": "unique",
+  "alias": "schedule",
+  "keyfieldslist": "schtime",
+  "allfieldslist": "schtime, schdetails",
+  "fields": [
+    {
+      "name": "SchTime",
+      "description": "",
+      "alias": "schtime",
+      "fulltype": "Type(*Timestamp)",
+      "type": "*Timestamp",
+      "length": "0",
+      "decimals": "",
+      "systemtype": "System.DateTime",
+      "iskey": true,
+      "keyposition": 0,
+      "allownull": false,
+      "sqlservertype": "dateTime",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": "PRIMARY KEY"
+    },
+    {
+      "name": "SchDetails",
+      "description": "",
+      "alias": "schdetails",
+      "fulltype": "Type(*Char) Len(50)",
+      "type": "*Char",
+      "length": "50",
+      "decimals": "",
+      "systemtype": "System.String",
+      "iskey": false,
+      "keyposition": -1,
+      "allownull": false,
+      "sqlservertype": "varchar(50)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": ""
+    }
+  ],
+  "keyfields": [
+    {
+      "name": "SchTime",
+      "description": "",
+      "alias": "schtime",
+      "fulltype": "Type(*Timestamp)",
+      "type": "*Timestamp",
+      "length": "0",
+      "decimals": "",
+      "systemtype": "System.DateTime",
+      "iskey": true,
+      "keyposition": 0,
+      "allownull": false,
+      "sqlservertype": "dateTime",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": "PRIMARY KEY"
+    }
+  ],
+  "nonkeyfields": [
+    {
+      "name": "SchDetails",
+      "description": "",
+      "alias": "schdetails",
+      "fulltype": "Type(*Char) Len(50)",
+      "type": "*Char",
+      "length": "50",
+      "decimals": "",
+      "systemtype": "System.String",
+      "iskey": false,
+      "keyposition": -1,
+      "allownull": false,
+      "sqlservertype": "varchar(50)",
+      "sqlservernull": "NOT NULL",
+      "sqlserverprimarykey": ""
+    }
+  ]
+}

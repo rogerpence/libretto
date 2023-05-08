@@ -1,0 +1,20 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: skumast
+Format........: rskumast
+Key field(s)..: 
+Type..........: physical
+Base file.....: 
+Description...: SKU Master
+Record length.: 67
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+imsku                 *Packed        5,0        Part/Inventory Number
+imname                *Char          40         Part Name
+imonhand              *Packed        7,0        Qty On Hand
+imonord               *Packed        7,0        Qty On Order
+imcommit              *Packed        7,0        Qty Committed
+imunitcost            *Packed        11,4       Unit Cost
+imunitprice           *Packed        11,4       Unit Price
+----------------------------------------------------------------------------

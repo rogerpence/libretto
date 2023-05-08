@@ -1,0 +1,44 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: gbooks
+Format........: gbook
+Key field(s)..: gbnum
+Type..........: physical
+Base file.....: 
+Description...: Book Groups Books File
+Record length.: 143
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+gbnum                 *Zoned         5,0        Book #
+
+gbdel                 *Char          1          D=deleted
+gbtit                 *Char          40         Title
+gbrbk                 *Char          1          X-Rated Y/N
+gauth                 *Zoned         4,0        Author #
+gread                 *Zoned         4,0        Reader #
+gbnew                 *Zoned         8,0        Date new DMCY
+gcall                 *Char          1          Cassettes Allowed ?
+gmall                 *Char          1          MP3 Allowed ?
+gsall                 *Char          1          SS Allowed ?
+gbcas                 *Zoned         2,0        # Cassettes
+gcasp                 *Zoned         1,0        No. Cass. Parts
+gbmp3                 *Zoned         2,0        # MP3 Disks
+gccop                 *Zoned         2,0        # of Cass.Copies
+gcshf                 *Zoned         2,0        # Cass.on Shelf
+gclon                 *Zoned         2,0        # Cass.on Loan
+gcmen                 *Zoned         2,0        # Cass.in Memding
+gmcop                 *Zoned         2,0        # of MP3 Copies
+gmshf                 *Zoned         2,0        # MP3 Shelf
+gmlon                 *Zoned         2,0        # MP3 on Loan
+gmmen                 *Zoned         2,0        # MP3.in Memding
+gscop                 *Zoned         2,0        # of SS Copies
+gsshf                 *Zoned         2,0        # SS  Shelf
+gslon                 *Zoned         2,0        # SS  on Loan
+gsmen                 *Zoned         2,0        # SS.in Memding
+gbiss                 *Zoned         5,0        # Issues
+gbout                 *Zoned         2,0        # Sets Out
+gbreq                 *Zoned         3,0        # Requests
+gissd                 *Zoned         8,0        Most Recent Issue Date
+gspar                 *Char          30         Spare Field
+----------------------------------------------------------------------------

@@ -1,0 +1,29 @@
+Database Name.: *public/dg net local
+Library.......: examples
+File..........: csmasterl2
+Format........: rcsmastl2
+Key field(s)..: cscustno, csyear, cstype
+Type..........: simple logical
+Base file.....: examples/csmaster
+Description...: Customer Sales By Descending Year/Type
+Record length.: 82
+
+Field name           Data type    Length        Description
+----------------------------------------------------------------------------
+cscustno              *Packed        9,0        Cutomer Number
+csyear                *Zoned         4,0        Sales Year
+cstype                *Zoned         1,0        1 = sales  2 = returns
+
+cssales01             *Packed        11,2       Sales Month 01
+cssales02             *Packed        11,2       Sales Month 02
+cssales03             *Packed        11,2       Sales Month 03
+cssales04             *Packed        11,2       Sales Month 04
+cssales05             *Packed        11,2       Sales Month 05
+cssales06             *Packed        11,2       Sales Month 06
+cssales07             *Packed        11,2       Sales Month 07
+cssales08             *Packed        11,2       Sales Month 08
+cssales09             *Packed        11,2       Sales Month 09
+cssales10             *Packed        11,2       Sales Month 10
+cssales11             *Packed        11,2       Sales Month 11
+cssales12             *Packed        11,2       Sales Month 12
+----------------------------------------------------------------------------

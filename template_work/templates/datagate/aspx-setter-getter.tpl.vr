@@ -1,0 +1,11 @@
+    BegSr AssignFieldsToUI
+        {% for field in fields %}
+        field_{{field.name}}.Text = {{field.name}}
+        {% endfor %}
+    EndSr
+
+    BegSr AssignFieldsFromUI
+        {% for field in fields %}
+        {{field.name}} = field_{{field.name}}.Text
+        {% endfor %}
+    EndSr
