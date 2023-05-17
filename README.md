@@ -263,3 +263,13 @@ The directory listing below shows one the `librettox.py` file but there are also
 The [LibrettoXUI](https://github.com/rogerpence/librettoUIX) WPF LibrettoX command line front-end can save a given Libretto session as a Libretto Set. A Libretto Set can later be opened to re-estalish that Libretto session. Libretto Set files are in the `libretto_sets` folder.
 
 When a Libretto Set is saved, a corresponding batch file is also saved in the `libretto_batch_files` folder. This lets you re-run the Libretto Set from the command line.
+
+
+
+Packages needed
+
+- jinja2
+- pyyaml
+- colorama
+- termcolor
+
